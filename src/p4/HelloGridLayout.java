@@ -9,10 +9,8 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
- *
- * @author Faqih firdaus k.p
+ * @author ridho
  */
-
 // ini adalah baris kode untuk mendeklarasikan kelas HelloGridLayout yaitu turunan dari JFrame dan untuk mengimplementasikan ActionListener dan fungsi kelas ini adalah frame untuk GUI. 
 public class HelloGridLayout extends JFrame implements ActionListener {
 

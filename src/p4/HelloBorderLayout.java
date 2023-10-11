@@ -9,8 +9,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
- *
- * @author Faqih firdaus k.p
+ * @author ridho
  */
 public class HelloBorderLayout extends JFrame {
 
