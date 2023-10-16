@@ -12,9 +12,9 @@ import javax.swing.*;
  *
  * @author ridho
  */
-public class HelloGridBagLayout extends JFrame {
+public class HelloGridBagLayoutA extends JFrame {
 
-    public HelloGridBagLayout() {
+    public HelloGridBagLayoutA() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel headerLabel = new JLabel("Layout in action: GridBagLayout", JLabel.CENTER);
@@ -23,7 +23,7 @@ public class HelloGridBagLayout extends JFrame {
         controlPanel.setLayout(new FlowLayout());
 
         JPanel panel = new JPanel();
-        panel.setBackground(Color.darkGray);
+        panel.setBackground(Color.red);
         panel.setSize(300, 300);
         GridBagLayout layout = new GridBagLayout();
         panel.setLayout(layout);
@@ -65,7 +65,7 @@ public class HelloGridBagLayout extends JFrame {
     public static void main(String[] args) {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                HelloGridBagLayout h = new HelloGridBagLayout();
+                HelloGridBagLayoutA h = new HelloGridBagLayoutA();
                 h.setVisible(true);
             }
         });
