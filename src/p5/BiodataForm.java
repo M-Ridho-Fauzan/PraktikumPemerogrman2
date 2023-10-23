@@ -29,7 +29,7 @@ public class BiodataForm extends JFrame {
         panel.setLayout(layout);
         GridBagConstraints gbc = new GridBagConstraints();
 
-// Bagian kiri
+// ============== Bagian kiri
         JPanel leftPanel = new JPanel(new GridBagLayout());
 
         gbc.gridx = 0;
@@ -37,17 +37,17 @@ public class BiodataForm extends JFrame {
         leftPanel.add(new JLabel("Nama:"), gbc);
 
         gbc.gridy = 1;
-        JTextField namaField = new JTextField(10); // Mengatur panjang text field ke 20 kolom
+        JTextField namaField = new JTextField(10);
         leftPanel.add(namaField, gbc);
 
         gbc.gridy = 2;
         leftPanel.add(new JLabel("No. Telepon:"), gbc);
 
         gbc.gridy = 3;
-        JTextField noTelpField = new JTextField(10); // Mengatur panjang text field ke 20 kolom
+        JTextField noTelpField = new JTextField(10);
         leftPanel.add(noTelpField, gbc);
 
-// Bagian kanan
+// ============== Bagian kanan
         JPanel rightPanel = new JPanel(new GridBagLayout());
 
         gbc.gridx = 0;
@@ -62,7 +62,7 @@ public class BiodataForm extends JFrame {
         JRadioButton radioButton2 = new JRadioButton("Wanita");
         rightPanel.add(radioButton2, gbc);
 
-// Checkbox WNA
+// =============== Checkbox WNA
         gbc.gridy = 3;
         JCheckBox checkBox = new JCheckBox("WNA");
         rightPanel.add(checkBox, gbc);
@@ -71,12 +71,12 @@ public class BiodataForm extends JFrame {
         jenisKelaminGroup.add(radioButton1);
         jenisKelaminGroup.add(radioButton2);
 
-// Tombol Simpan
+// =============== Tombol Simpan
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         JButton simpanButton = new JButton("Simpan");
         buttonPanel.add(simpanButton);
 
-// Menyusun elemen-elemen ke dalam panel utama
+// =============== Menyusun elemen-elemen ke dalam panel utama
         gbc.gridx = 0;
         gbc.gridy = 0;
         mainPanel.add(leftPanel, gbc);
@@ -89,18 +89,18 @@ public class BiodataForm extends JFrame {
         gbc.gridwidth = 2;
         mainPanel.add(buttonPanel, gbc);
 
-//        ======
+// ====================
         JTextArea txtOutput = new JTextArea("");
         txtOutput.setBounds(15, 370, 650, 100);
 
-//        ======
+// ====================
         checkBox.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 checkBoxSelected = e.getStateChange() == 1;
             }
         });
 
-//       ===========================
+// Mesin nya
         simpanButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String jenisKelamin = "";
@@ -122,7 +122,7 @@ public class BiodataForm extends JFrame {
                     txtOutput.append("WNA (Outsider)  : Bukan Outsider" + "\n");
                 }
 
-                txtOutput.append("============================================" + "\n");
+                txtOutput.append("====================================" + "\n");
             }
         });
 
