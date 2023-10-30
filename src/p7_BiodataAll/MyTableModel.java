@@ -1,12 +1,20 @@
-package p6_JOptionPane;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package p7_BiodataAll;
 
+/**
+ *
+ * @author ridho
+ */
 import javax.swing.table.*;
 import java.util.ArrayList;
 import java.util.List;
 
 class MyTableModel extends AbstractTableModel {
 
-    private String[] columnNames = {"nama", "Jenis Member"};
+    private String[] columnNames = {"nama", "No Telpon", "Jenis Member", "WNA"};
     private ArrayList<ArrayList<String>> data = new ArrayList<ArrayList<String>>();
 
     public int getColumnCount() {
@@ -30,7 +38,7 @@ class MyTableModel extends AbstractTableModel {
         return false;
     }
 
-    public void add(ArrayList<String> value) {
+    public void addRow(ArrayList<String> value) {
         data.add(value);
         fireTableRowsInserted(data.size() - 1, data.size() - 1);
     }

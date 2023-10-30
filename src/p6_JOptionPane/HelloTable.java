@@ -31,10 +31,10 @@ public class HelloTable extends JFrame {
         JRadioButton radioButton1 = new JRadioButton("Silver", true);
         radioButton1.setBounds(15, 115, 350, 30);
 
-        JRadioButton radioButton2 = new JRadioButton("Gold", true);
+        JRadioButton radioButton2 = new JRadioButton("Gold");
         radioButton2.setBounds(15, 145, 350, 30);
 
-        JRadioButton radioButton3 = new JRadioButton("Platinum", true);
+        JRadioButton radioButton3 = new JRadioButton("Platinum");
         radioButton3.setBounds(15, 175, 350, 30);
 
         ButtonGroup bg = new ButtonGroup();
@@ -44,7 +44,7 @@ public class HelloTable extends JFrame {
 
 //       ==========================
         JButton button = new JButton("Simpan");
-        button.setBounds(15, 250, 100, 40);
+        button.setBounds(15, 205, 100, 40);
 
         javax.swing.JTable table = new JTable();
         JScrollPane scrollableTable = new JScrollPane(table);

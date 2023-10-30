@@ -18,6 +18,7 @@ public class TugasP3 extends JFrame {
     public TugasP3() {
         this.checkBoxSelected = false;
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JLabel headerLabel = new JLabel("Form Biodata", JLabel.CENTER);
 
         JLabel labelNama = new JLabel("Nama:");
         labelNama.setBounds(15, 40, 350, 10);

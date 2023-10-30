@@ -24,11 +24,16 @@ public class HelloMessageDialog extends JFrame {
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 //                Macam-macam jenis mesaage
-                JOptionPane.showMessageDialog(HelloMessageDialog.this, "Hello bitch", "Error", JOptionPane.ERROR_MESSAGE, null);
-                JOptionPane.showMessageDialog(HelloMessageDialog.this, "Hello bitch", "Error", JOptionPane.INFORMATION_MESSAGE, null);
-                JOptionPane.showMessageDialog(HelloMessageDialog.this, "Hello bitch", "Error", JOptionPane.WARNING_MESSAGE, null);
-                JOptionPane.showMessageDialog(HelloMessageDialog.this, "Hello bitch", "Error", JOptionPane.QUESTION_MESSAGE, null);
-                JOptionPane.showMessageDialog(HelloMessageDialog.this, "Hello bitch", "Error", JOptionPane.PLAIN_MESSAGE, null);
+                JOptionPane.showMessageDialog(HelloMessageDialog.this,
+                        "Hello Aku", "Error", JOptionPane.ERROR_MESSAGE, null);
+                JOptionPane.showMessageDialog(HelloMessageDialog.this,
+                        "Hello Aku", "Error", JOptionPane.INFORMATION_MESSAGE, null);
+                JOptionPane.showMessageDialog(HelloMessageDialog.this,
+                        "Hello Aku", "Error", JOptionPane.WARNING_MESSAGE, null);
+                JOptionPane.showMessageDialog(HelloMessageDialog.this,
+                        "Hello Aku", "Error", JOptionPane.QUESTION_MESSAGE, null);
+                JOptionPane.showMessageDialog(HelloMessageDialog.this,
+                        "Hello Aku", "Error", JOptionPane.PLAIN_MESSAGE, null);
             }
         });
 

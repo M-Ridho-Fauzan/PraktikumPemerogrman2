@@ -1,4 +1,4 @@
-package p6_JOptionPane;
+package p6_Tugas;
 
 import javax.swing.table.*;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.List;
 
 class MyTableModel extends AbstractTableModel {
 
-    private String[] columnNames = {"nama", "Jenis Member"};
+    private String[] columnNames = {"nama", "No Telpon", "Jenis Member", "WNA"};
     private ArrayList<ArrayList<String>> data = new ArrayList<ArrayList<String>>();
 
     public int getColumnCount() {

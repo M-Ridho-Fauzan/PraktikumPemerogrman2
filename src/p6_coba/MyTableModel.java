@@ -1,12 +1,20 @@
-package p6_JOptionPane;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package p6_coba;
 
+/**
+ *
+ * @author ridho
+ */
 import javax.swing.table.*;
 import java.util.ArrayList;
 import java.util.List;
 
 class MyTableModel extends AbstractTableModel {
 
-    private String[] columnNames = {"nama", "Jenis Member"};
+    private String[] columnNames = {"nama", "No Telpon", "Jenis Member", "WNA"};
     private ArrayList<ArrayList<String>> data = new ArrayList<ArrayList<String>>();
 
     public int getColumnCount() {
